@@ -1,10 +1,7 @@
 <ul>
   {{#each}}
     <li>
-      {{#link-to 'post' this}}
-        {{title}},
-        {{body}}
-      {{/link-to}}
+      {{link-to title 'posts.show' this}}
     </li>
   {{else}}
     <li>No posts found.</li>
